@@ -36,7 +36,7 @@ The API response contains an array of recipe objects, each containing informatio
 
 If the API request is successful, the user is navigated to the Results screen with the retrieved recipes. In case of an error or no matching recipes, an appropriate message is displayed.
 
-Another API request is made to fetch recipe informations using https://api.spoonacular.com/recipes/${recipe.id}/information.
+Another API request is made to fetch recipe informations using https://api.spoonacular.com/recipes/{id}/information.
 
 If the API request is successful, the user is navigated to the Recipe screen where he can have access to the recipe's cooking time, ingredients and instructions.
 
