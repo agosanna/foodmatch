@@ -1,28 +1,21 @@
 # FOODMATCH:
 
 ## Overview
-The Recipe Search App is a mobile application built with React Native. It allows users to search for recipes based on selected categories, cooking time range, and ingredients. The app provides a user-friendly interface to input search parameters, display search results, and view recipe details.
 
-## Architecture
-The app follows a component-based architecture, utilizing reusable UI components and screens to create the user interface. The main components and screens are as follows:
-
-## Components
-The Recipe Search App includes the following main components:
-
-- Ingredient: A reusable component that represents an ingredient in the ingredient list. It displays the ingredient name and a delete button to remove the ingredient from the list.
-- CategoryButton: A reusable component for selecting the category and pass the value to the next screen with rout.params
+Foodmatch is a mobile application built with React Native. It allows users to search for recipes based on selected categories, cooking time range, and ingredients. The app provides a user-friendly interface to input search parameters, display search results, and view recipe details.
 
 ## Screens
-The Recipe Search App includes the following screens:
 
+The screens are built using a stack navigator from the react navigation library
 - Categories: This screen displays a list of recipe categories. Users can select a category of interest to search for recipes.
-- TimeSlider: This screen allows users to set the cooking time range using a slider.
+- TimeSlider: This screen allows users to set the cooking time range using a slider component from @react-native-community/slider.
 - AddIngredients: This screen allows users to add ingredients for the recipe search. Users can enter ingredient names and view the list of added ingredients.
 - Results: This screen displays the search results based on the selected category, cooking time range, and ingredients. It shows a list of recipes that match the search criteria.
 - Recipe: This screen displays the details of a selected recipe. It shows the recipe title, cooking time, ingredients, and instructions.
 
 ## API Integration
-The Recipe Search App integrates with the Spoonacular API to fetch recipe data. The getResults function in the AddIngredients component sends a GET request to the https://api.spoonacular.com/recipes/complexSearch endpoint to retrieve recipe search results.
+
+Foodmatch integrates with the Spoonacular API (https://spoonacular.com/food-api) to fetch recipe data. The getResults function in the AddIngredients component sends a GET request to the https://api.spoonacular.com/recipes/complexSearch endpoint to retrieve recipe search results.
 
 The following parameters are included in the request:
 
