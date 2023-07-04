@@ -2,11 +2,11 @@
 
 ## Overview
 
-Foodmatch is a mobile application built with React Native. It allows users to search for recipes based on selected categories, cooking time range, and ingredients. The app provides a user-friendly interface to input search parameters, display search results, and view recipe details.
+Foodmatch is a mobile application built with React Native Expo. It allows users to search for recipes based on selected categories, cooking time range, and ingredients. The app provides a user-friendly interface to input search parameters, display search results, and view recipe details.
 
 ## Screens
 
-The screens are built using a stack navigator from the react navigation library
+The screens are built using a stack navigator from the React-Navigation library
 - Categories: This screen displays a list of recipe categories. Users can select a category of interest to search for recipes.
 - TimeSlider: This screen allows users to set the cooking time range using a slider component from @react-native-community/slider.
 - AddIngredients: This screen allows users to add ingredients for the recipe search. Users can enter ingredient names and view the list of added ingredients.
